@@ -6,7 +6,7 @@ const app = express();
 const googleModel = require("./model/form.js")
 const bodyParser = require("express-json")
 app.use(bodyParser()); 
-const PORT = 5000;
+const PORT ="https://server-google-auth.vercel.app";
 const connectDB = require("./config/db.js")
 const cors = require("cors");
 app.use(express.json());
