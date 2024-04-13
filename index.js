@@ -83,6 +83,6 @@ app.post("/google-auth", async (req, res) => {
 app.get('/get',(req,res)=>{
 res.cookie("name","adeel").json({message:"All is Ok"})
 })
-    app.listen(PORT, (req,res) =>
-        res.json({message:"Everything is Good"})
+    app.listen(PORT, ('/',(req,res) =>
+      return res.json({message:"Everything is Good"})
         console.log(`Server running on PORT ${PORT}`));
